@@ -38,8 +38,13 @@
 &lt;p&gt;安装，如果出现权限问题的报错，试一试sudo，记得在两个语句前都加上&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; sudo rm -rf /usr/local/go &amp;amp;&amp;amp; sudo tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;以及hugo的安装记得安装&lt;strong&gt;extension&lt;/strong&gt;版本。&lt;/p&gt;
-&lt;h2 id=&#34;主题下载&#34;&gt;主题下载
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;主题模板下载&#34;&gt;主题模板下载
+&lt;/h2&gt;&lt;p&gt;正常来说可以按照hugo官方文档的&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/quick-start/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;quick start&lt;/a&gt;一步一步来，教程很详细，但stack主题和正常不太一样，我的做法是自己结合stack的&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;官网&lt;/a&gt;摸索出来的，并没有完全按照hugo官方教程来。&lt;/p&gt;
+&lt;p&gt;首先&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/CaiJimmy/hugo-theme-stack-starter.git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;将stack-starter的代码复制到本地&lt;/p&gt;
+</description>
         </item>
         
     </channel>
