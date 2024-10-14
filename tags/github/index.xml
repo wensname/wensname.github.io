@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Github on sufan 的 blog</title>
+        <link>http://localhost:1313/tags/github/</link>
+        <description>Recent content in Github on sufan 的 blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 14 Oct 2024 20:43:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>用 Hugo 和 Github Page 搭建自己的博客网站</title>
+        <link>http://localhost:1313/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Mon, 14 Oct 2024 20:43:25 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;p&gt;利用Hugo作为框架，采用的Theme为Stack，申请Github Page的服务器和域名，部署自己的静态博客网站。&lt;/p&gt;
+&lt;h2 id=&#34;原理&#34;&gt;原理
+&lt;/h2&gt;&lt;p&gt;服务器和域名用github page的，Hugo是一个用go编写的的静态网页生成器，我的理解是用户负责提供markdown等格式的源文件，Hugo负责生成有一定结构的文件，包含html等，部署到github.io上后即可获得精美的个人博客。&lt;/p&gt;
+&lt;h2 id=&#34;环境&#34;&gt;环境
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;windows11  WSL2&lt;/li&gt;
+&lt;li&gt;Linux发行版本是 unbuntu 22.04&lt;/li&gt;
+&lt;li&gt;go 1.23.2&lt;/li&gt;
+&lt;li&gt;hugo v0.135.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;p&gt;我用的stack theme似乎有可以不用本地安装的方法，具体是用了github的codespace详情见stack作者的&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Readme&lt;/a&gt;，不过我采用的是本地搭建的方式，需要安装Git，GO和Hugo。安装网站分别是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://go.dev/doc/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://go.dev/doc/install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/installation/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;值得一提的是go的安装需要先下载然后用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; rm -rf /usr/local/go &amp;amp;&amp;amp; tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装，如果出现权限问题的报错，试一试sudo，记得在两个语句前都加上&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; sudo rm -rf /usr/local/go &amp;amp;&amp;amp; sudo tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;以及hugo的安装记得安装&lt;strong&gt;extension&lt;/strong&gt;版本。&lt;/p&gt;
+&lt;h2 id=&#34;主题下载&#34;&gt;主题下载
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
