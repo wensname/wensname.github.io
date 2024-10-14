@@ -6,18 +6,10 @@
         <description>Recent content in Categories on sufan 的 blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 14 Oct 2024 16:03:17 +0800</lastBuildDate><atom:link href="https://wensname.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>杂谈</title>
-        <link>https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/</link>
-        <pubDate>Mon, 14 Oct 2024 16:03:17 +0800</pubDate>
-        
-        <guid>https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/</guid>
-        <description>&lt;img src="https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/pen.jpg" alt="Featured image of post 杂谈" /&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 14 Oct 2024 20:43:25 +0800</lastBuildDate><atom:link href="https://wensname.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo Stack</title>
         <link>https://wensname.github.io/categories/hugo-stack/</link>
-        <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 14 Oct 2024 20:43:25 +0800</pubDate>
         
         <guid>https://wensname.github.io/categories/hugo-stack/</guid>
         <description>&lt;img src="https://wensname.github.io/categories/hugo-stack/hugo-stack.png" alt="Featured image of post Hugo Stack" /&gt;</description>
@@ -25,10 +17,18 @@
         <item>
         <title>折腾</title>
         <link>https://wensname.github.io/categories/%E6%8A%98%E8%85%BE/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 14 Oct 2024 20:43:25 +0800</pubDate>
         
         <guid>https://wensname.github.io/categories/%E6%8A%98%E8%85%BE/</guid>
         <description>&lt;img src="https://wensname.github.io/categories/%E6%8A%98%E8%85%BE/zheteng.jpg" alt="Featured image of post 折腾" /&gt;</description>
+        </item>
+        <item>
+        <title>杂谈</title>
+        <link>https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/</link>
+        <pubDate>Mon, 14 Oct 2024 16:03:17 +0800</pubDate>
+        
+        <guid>https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/</guid>
+        <description>&lt;img src="https://wensname.github.io/categories/%E6%9D%82%E8%B0%88/pen.jpg" alt="Featured image of post 杂谈" /&gt;</description>
         </item>
         
     </channel>

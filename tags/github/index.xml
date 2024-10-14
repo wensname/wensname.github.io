@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Github on sufan 的 blog</title>
-        <link>http://localhost:1313/tags/github/</link>
+        <link>https://wensname.github.io/tags/github/</link>
         <description>Recent content in Github on sufan 的 blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 14 Oct 2024 20:43:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 14 Oct 2024 20:43:25 +0800</lastBuildDate><atom:link href="https://wensname.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>用 Hugo 和 Github Page 搭建自己的博客网站</title>
-        <link>http://localhost:1313/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+        <link>https://wensname.github.io/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
         <pubDate>Mon, 14 Oct 2024 20:43:25 +0800</pubDate>
         
-        <guid>http://localhost:1313/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+        <guid>https://wensname.github.io/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
         <description>&lt;p&gt;利用Hugo作为框架，采用的Theme为Stack，申请Github Page的服务器和域名，部署自己的静态博客网站。&lt;/p&gt;
 &lt;h2 id=&#34;原理&#34;&gt;原理
 &lt;/h2&gt;&lt;p&gt;服务器和域名用github page的，Hugo是一个用go编写的的静态网页生成器，我的理解是用户负责提供markdown等格式的源文件，Hugo负责生成有一定结构的文件，包含html等，部署到github.io上后即可获得精美的个人博客。&lt;/p&gt;
