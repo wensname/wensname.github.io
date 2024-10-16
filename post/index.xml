@@ -6,7 +6,82 @@
         <description>Recent content in Posts on sufan 的 blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 14 Oct 2024 20:43:25 +0800</lastBuildDate><atom:link href="https://wensname.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 16 Oct 2024 19:02:02 +0800</lastBuildDate><atom:link href="https://wensname.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>时间复杂度符号表示</title>
+        <link>https://wensname.github.io/post/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8%E7%A4%BA/</link>
+        <pubDate>Wed, 16 Oct 2024 19:02:02 +0800</pubDate>
+        
+        <guid>https://wensname.github.io/post/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;p&gt;此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\Omega,o,\omega,\Theta$&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义
+&lt;/h2&gt;&lt;p&gt;有两个非负函数 $f,g:R\to R$，记
+&lt;/p&gt;
+$$
+\lim_{x\to\infty}\frac{f(x)}{g(x)} =M
+\\
+\lim_{x\to\infty}\frac{g(x)}{f(x)} =N
+$$&lt;p&gt;
+记录符号
+&lt;/p&gt;
+$$
+f(x)=notation(g(x))
+$$&lt;p&gt;各符号对应关系如下表&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$M&amp;lt;\infty$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$M=0$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$N&amp;lt;\infty$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$N=0$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;$M&amp;lt;\infty \and N&amp;lt;\infty$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;notation&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$O$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$o$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Theta$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;直观表示&#34;&gt;直观表示
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;符号&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;粗暴理解&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$O$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;ldquo;$\le$&amp;rdquo;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;ldquo;$\ge$&amp;rdquo;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$o$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;ldquo;$&amp;lt;$&amp;rdquo;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;ldquo;$&amp;gt;$&amp;rdquo;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Theta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&amp;ldquo;$=$&amp;rdquo;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
         <title>用 Hugo 和 Github Page 搭建自己的博客网站</title>
         <link>https://wensname.github.io/post/%E7%94%A8-hugo-%E5%92%8C-github-page-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
         <pubDate>Mon, 14 Oct 2024 20:43:25 +0800</pubDate>
