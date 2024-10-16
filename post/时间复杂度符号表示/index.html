@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty \\and N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty , N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
 <title>时间复杂度符号表示</title>
 
 <link rel='canonical' href='https://wensname.github.io/post/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8%E7%A4%BA/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="时间复杂度符号表示">
-<meta property='og:description' content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty \\and N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
+<meta property='og:description' content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty , N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
 <meta property='og:url' content='https://wensname.github.io/post/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%AC%A6%E5%8F%B7%E8%A1%A8%E7%A4%BA/'>
 <meta property='og:site_name' content='sufan 的 blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2024-10-16T19:02:02&#43;08:00'/><meta property='article:modified_time' content='2024-10-16T19:02:02&#43;08:00'/>
 <meta name="twitter:title" content="时间复杂度符号表示">
-<meta name="twitter:description" content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty \\and N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
+<meta name="twitter:description" content="此篇文章主要记录阐述算法时间复杂度分析中用到的符号 : $O,\\Omega,o,\\omega,\\Theta$\n定义 有两个非负函数 $f,g:R\\to R$，记 $$ \\lim_{x\\to\\infty}\\frac{f(x)}{g(x)} =M \\\\ \\lim_{x\\to\\infty}\\frac{g(x)}{f(x)} =N $$ 记录符号 $$ f(x)=notation(g(x)) $$各符号对应关系如下表\n$M&lt;\\infty$ $M=0$ $N&lt;\\infty$ $N=0$ $M&lt;\\infty , N&lt;\\infty$ notation $O$ $o$ $\\Omega$ $\\omega$ $\\Theta$ 直观表示 符号 粗暴理解 $O$ &ldquo;$\\le$&rdquo; $\\Omega$ &ldquo;$\\ge$&rdquo; $o$ &ldquo;$&lt;$&rdquo; $\\omega$ &ldquo;$&gt;$&rdquo; $\\Theta$ &ldquo;$=$&rdquo; ">
     <link rel="shortcut icon" href="/pikalogo.png" />
 
     </head>
@@ -329,7 +329,7 @@ $$<p>各符号对应关系如下表</p>
           <th style="text-align: center">$M=0$</th>
           <th style="text-align: center">$N&lt;\infty$</th>
           <th style="text-align: center">$N=0$</th>
-          <th style="text-align: center">$M&lt;\infty \and N&lt;\infty$</th>
+          <th style="text-align: center">$M&lt;\infty , N&lt;\infty$</th>
       </tr>
   </thead>
   <tbody>
@@ -400,6 +400,30 @@ $$<p>各符号对应关系如下表</p>
     </footer>
 
 
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
     
 </article>
 
