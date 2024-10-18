@@ -242,6 +242,7 @@
     <li><a href="#番外">番外</a>
       <ol>
         <li><a href="#添加链接">添加链接</a></li>
+        <li><a href="#ssh-agent">ssh-agent</a></li>
       </ol>
     </li>
     <li><a href="#参考资料">参考资料</a></li>
@@ -508,6 +509,21 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">`</span><span class="n">image</span><span class="o">`</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="n">accepts</span><span class="w"> </span><span class="k">both</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">external</span><span class="w"> </span><span class="n">images</span><span class="p">.</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="ssh-agent">ssh-agent
+</h3><p>ssh每次都要输入密钥很麻烦，因此使用ssh-agent
+具体输入以下命令即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ssh-agent -s
+</span></span><span class="line"><span class="cl"><span class="nb">exec</span> ssh-agent fish
+</span></span><span class="line"><span class="cl">ssh-add ~/.ssh/id_ed25519
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="参考资料">参考资料
 </h2><blockquote>
