@@ -6,7 +6,15 @@
         <description>Recent content in Tags on sufan 的 blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 17 Oct 2024 19:38:34 +0800</lastBuildDate><atom:link href="https://wensname.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 26 Oct 2024 01:53:07 +0800</lastBuildDate><atom:link href="https://wensname.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Neovim</title>
+        <link>https://wensname.github.io/tags/neovim/</link>
+        <pubDate>Sat, 26 Oct 2024 01:53:07 +0800</pubDate>
+        
+        <guid>https://wensname.github.io/tags/neovim/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Fish</title>
         <link>https://wensname.github.io/tags/fish/</link>
         <pubDate>Thu, 17 Oct 2024 19:38:34 +0800</pubDate>
