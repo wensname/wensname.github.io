@@ -233,6 +233,7 @@
           <ol>
             <li><a href="#nvim-cmp-某些命令卡顿">nvim-cmp 某些命令卡顿</a></li>
             <li><a href="#markdown-preview插件">markdown-preview插件</a></li>
+            <li><a href="#输入法自动切换">输入法自动切换</a></li>
           </ol>
         </li>
       </ol>
@@ -301,7 +302,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -354,6 +355,14 @@
 ，牺牲了<code>r</code>命令下的自动补全。</p>
 <h4 id="markdown-preview插件">markdown-preview插件
 </h4><p>插件的作者只提供了vim版本的设置，需要手动将其改为lua文件，将部分命令替换即可。</p>
+<h4 id="输入法自动切换">输入法自动切换
+</h4><p>在输入的时候经常用中文输入，如果这时候回到normal模式就必须按shift切回英文，比较麻烦
+因此可以用autocmd来自动切换，需要下载im-select，这个不是插件，只是一个exe可执行文件
+，将其放在nvim目录下，在此之前在windows设置里下载好英文输入法语言包。
+就可以用<code>:silent :!~/.config/nvim/im-select.exe 1033&quot;</code>命令来换输入法，后面的1033代表
+换为英文，2052代表中文，还遇到一个小问题是我发现我习惯用的<code>&lt;C-c&gt;</code>命令并不会调用
+InsertLeave Event，因此我做了一个键位映射，将其映射到了<code>&lt;Esc&gt;</code>键，至此就可以比较
+舒服的编辑和输入法自动切换了。</p>
 
 </section>
 

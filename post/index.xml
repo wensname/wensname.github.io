@@ -50,6 +50,14 @@
 ，牺牲了&lt;code&gt;r&lt;/code&gt;命令下的自动补全。&lt;/p&gt;
 &lt;h4 id=&#34;markdown-preview插件&#34;&gt;markdown-preview插件
 &lt;/h4&gt;&lt;p&gt;插件的作者只提供了vim版本的设置，需要手动将其改为lua文件，将部分命令替换即可。&lt;/p&gt;
+&lt;h4 id=&#34;输入法自动切换&#34;&gt;输入法自动切换
+&lt;/h4&gt;&lt;p&gt;在输入的时候经常用中文输入，如果这时候回到normal模式就必须按shift切回英文，比较麻烦
+因此可以用autocmd来自动切换，需要下载im-select，这个不是插件，只是一个exe可执行文件
+，将其放在nvim目录下，在此之前在windows设置里下载好英文输入法语言包。
+就可以用&lt;code&gt;:silent :!~/.config/nvim/im-select.exe 1033&amp;quot;&lt;/code&gt;命令来换输入法，后面的1033代表
+换为英文，2052代表中文，还遇到一个小问题是我发现我习惯用的&lt;code&gt;&amp;lt;C-c&amp;gt;&lt;/code&gt;命令并不会调用
+InsertLeave Event，因此我做了一个键位映射，将其映射到了&lt;code&gt;&amp;lt;Esc&amp;gt;&lt;/code&gt;键，至此就可以比较
+舒服的编辑和输入法自动切换了。&lt;/p&gt;
 </description>
         </item>
         <item>
