@@ -234,6 +234,7 @@
             <li><a href="#nvim-cmp-某些命令卡顿">nvim-cmp 某些命令卡顿</a></li>
             <li><a href="#markdown-preview插件">markdown-preview插件</a></li>
             <li><a href="#输入法自动切换">输入法自动切换</a></li>
+            <li><a href="#nvim迁移问题">nvim迁移问题</a></li>
           </ol>
         </li>
       </ol>
@@ -302,7 +303,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -363,6 +364,78 @@
 换为英文，2052代表中文，还遇到一个小问题是我发现我习惯用的<code>&lt;C-c&gt;</code>命令并不会调用
 InsertLeave Event，因此我做了一个键位映射，将其映射到了<code>&lt;Esc&gt;</code>键，至此就可以比较
 舒服的编辑和输入法自动切换了。</p>
+<h4 id="nvim迁移问题">nvim迁移问题
+</h4><p>2024.10.27 尝试将台式机上的nvim配置到笔记本上面，遇到一些问题，
+我将我的nvim配置首先放到了github上面，方便维护下载 <a class="link" href="https://github.com/wensname/nvim"  target="_blank" rel="noopener"
+    >我的配置</a> 。</p>
+<h5 id="首先安装nvim">首先安装nvim
+</h5><p>切记一定注意nvim的版本，我第一次下载直接<code>sudo apt install neovim</code>下载的版本比较老，和neovim-treesitter
+插件有冲突，后面换成<code>v0.11.0-dev</code>版本就好了，具体方法参考了<a class="link" href="https://blog.csdn.net/SteveForever/article/details/124896792"  target="_blank" rel="noopener"
+    >这个博客</a></p>
+<ul>
+<li>添加源</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># stable version</span>
+</span></span><span class="line"><span class="cl">sudo add-apt-repository ppa:neovim-ppa/stable
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># dev version</span>
+</span></span><span class="line"><span class="cl">sudo add-apt-repository ppa:neovim-ppa/unstable
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>更新源</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 直接安装不会成功，会提示</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># &#34;The following packages have been kept back: ... &#34;</span>
+</span></span><span class="line"><span class="cl">sudo apt upgrade
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>安装</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install neovim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时安装的就是我现在的<code>v0.11.0-dev</code>版本，如果以后更新了想要安装特定版本，可以参考上方链接中剩余部分
+。</p>
+<h5 id="下载插件管理器">下载插件管理器
+</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone --depth <span class="m">1</span> https://github.com/wbthomason/packer.nvim<span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span> ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="clone-配置">clone 配置
+</h5><p>将github上的自己的配置文件clone到目录<code>~/.config/nvim</code>即可。</p>
 
 </section>
 
